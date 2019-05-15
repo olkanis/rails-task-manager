@@ -4,9 +4,12 @@
   <% @tasks.each do |task| %>
     <li>
       <p>
-      <input type="checkbox">
       <%= link_to task.title, task_path(task) %>
       </p>
     </li>
   <% end %>
 </ul>
+<p>--------------------------------------------------</p>
+
+<%= link_to " + Create a new task", form_path %>
+
